@@ -1,7 +1,7 @@
 function ageCalculator() {  
  
-    var userinput = document.getElementById("DOB").value;  
-    var dob = new Date(userinput);  
+    const userinput = document.getElementById("DOB").value;  
+    const dob = new Date(userinput);  
       
  
     if(userinput==null || userinput==''){  
@@ -12,19 +12,19 @@ function ageCalculator() {
   
     else {  
   
-    var dobYear = dob.getYear();  
-    var dobMonth = dob.getMonth();  
-    var dobDate = dob.getDate();  
+    const dobYear = dob.getYear();  
+    const dobMonth = dob.getMonth();  
+    const dobDate = dob.getDate();  
  
-    var now = new Date();  
+    const now = new Date();  
 
-    var currentYear = now.getYear();  
-    var currentMonth = now.getMonth();  
-    var currentDate = now.getDate();  
+    const currentYear = now.getYear();  
+    const currentMonth = now.getMonth();  
+    const currentDate = now.getDate();  
       
  
-    var age = {};  
-    var ageString = "";  
+    const age = {};  
+    const ageString = "";  
     
 
     yearAge = currentYear - dobYear;  
@@ -41,7 +41,7 @@ function ageCalculator() {
   
     if (currentDate >= dobDate)  
  
-      var dateAge = currentDate - dobDate;  
+      const dateAge = currentDate - dobDate;  
     else {  
       monthAge--;  
       var dateAge = 31 + currentDate - dobDate;  
